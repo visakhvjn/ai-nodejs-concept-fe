@@ -1,6 +1,6 @@
 async function fetchAndDisplayConcept() {
   try {
-    const response = await fetch('http://localhost:3000/concept');
+    const response = await fetch('https://ai-nodejs-concept-be.onrender.com/concept');
     const htmlContent = await response.text();
     document.getElementById('conceptBox').innerHTML = htmlContent;
   } catch (error) {
